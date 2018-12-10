@@ -12,8 +12,29 @@
 
 ![第二步](https://github.com/TopGuo/flutter_boss_v1.0/blob/master/bossapp/doc/shothot/2.gif?raw=true)
 
+> 详情
+![第三部](https://github.com/TopGuo/flutter_boss_v1.0/blob/master/bossapp/doc/shothot/3.gif?raw=true)
+
+![第四部](https://github.com/TopGuo/flutter_boss_v1.0/blob/master/bossapp/doc/shothot/4.gif?raw=true)
+
+![](https://github.com/TopGuo/flutter_boss_v1.0/blob/master/bossapp/doc/shothot/5.gif?raw=true)
+
+![](https://github.com/TopGuo/flutter_boss_v1.0/blob/master/bossapp/doc/shothot/6.gif?raw=true)
 
 
+## 说明
+1. 该项目有许多地方没有完善
+ - 启动页白屏
+ - 分页指示器dot问题
+ - ...
+ - 本项目是在9月前flutter_boss 这个项目的基础上用1.0重构
+ - 喜欢的朋友star
+ - 感兴趣的朋友欢迎PR
+
+2. 本项目短时间内不再更新
+3. 该项目说明blog地址是：[blog_adress](http://www.cnblogs.com/gdsblog)
+
+4. time:2018-12-10 
 
 
 # bossapp
