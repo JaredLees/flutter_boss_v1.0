@@ -21,4 +21,9 @@ class Constant {
 
   ///appBarHeight 高度
   static const double appBarHeight = 150.0;
+
+  //static const enum AppBarBehavior { normal, pinned, floating, snapping }
+
+  ///公司详情页appbar高度
+  static const double ComDetailAppBarHeight = 256.0;
 }

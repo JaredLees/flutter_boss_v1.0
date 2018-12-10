@@ -4,6 +4,7 @@ import '../Config/Constant.dart';
 import '../screens/message/MessageMain.dart';
 import '../screens/job/JobMainScreen.dart';
 import '../screens/mine/MineMain.dart';
+import '../screens/company/CompanyMain.dart';
 ///程序主入口
 class Main extends StatefulWidget {
   @override
@@ -44,9 +45,8 @@ class _MainState extends State<Main> with SingleTickerProviderStateMixin {
     return Scaffold(
         body: TabBarView(
           children: <Widget>[
-            //JobMainScreen(),
             JobMainScreen(),
-            new Text('CompanyTab--公司'),
+            CompanyMain(),
             MessageMain(),
             MineMain()
           ],

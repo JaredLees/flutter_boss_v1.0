@@ -1,0 +1,1 @@
+enum AppBarBehavior { normal, pinned, floating, snapping }

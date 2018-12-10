@@ -23,10 +23,16 @@ class CompanyModel {
   final String hot; // 热招职位
   final String count; // 职位总数
   final String inc; // 公司详情
+
   static List<CompanyModel> fromJson(String json) {
-    return jsonDecode(json)['list']
-        .map((obj) => CompanyModel.fromMap(obj))
-        .toList();
+    List<CompanyModel> listModel = new List<CompanyModel>();
+    List list = jsonDecode(json)['list'];
+    list.forEach((v) {
+      var model = fromMap(v);
+      listModel.add(model);
+    });
+
+    return listModel;
   }
 
   static CompanyModel fromMap(Map map) {

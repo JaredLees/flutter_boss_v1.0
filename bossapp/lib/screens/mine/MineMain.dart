@@ -37,18 +37,20 @@ class _MineMainState extends State<MineMain> {
                       children: <Widget>[
                         Column(
                           mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
                           children: <Widget>[
-                            new Padding(
+                            Padding(
                                 padding: const EdgeInsets.only(
-                                  top: 10.0,
-                                  bottom: 10.0,
-                                ),
-                                child: new Text('鸟窝',
-                                    style: new TextStyle(
+                                    top: 10.0, bottom: 10.0),
+                                child: Text('鸟窝',
+                                    style: TextStyle(
                                         color: Colors.white, fontSize: 18.0))),
-                            new Text('离职-考虑机会',
-                                style: new TextStyle(
-                                    color: Colors.white, fontSize: 12.0)),
+                            Padding(
+                              padding: EdgeInsets.only(left: 20),
+                              child: Text('离职-考虑机会',
+                                  style: TextStyle(
+                                      color: Colors.white, fontSize: 14.0)),
+                            ),
                           ],
                         ),
                         Padding(
