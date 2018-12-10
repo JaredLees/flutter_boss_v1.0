@@ -18,4 +18,7 @@ class Constant {
   static const double TabImageWidth=30;
   ///TabImageHeight
   static const double TabImageHeight=30;
+
+  ///appBarHeight 高度
+  static const double appBarHeight = 150.0;
 }

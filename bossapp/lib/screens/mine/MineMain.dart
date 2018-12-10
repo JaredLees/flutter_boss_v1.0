@@ -1,3 +1,4 @@
+import 'package:bossapp/Config/Constant.dart';
 import 'package:flutter/material.dart';
 
 
@@ -10,17 +11,15 @@ class _MineMainState extends State<MineMain> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('text'),
-      ),
-      body: Container(
-        padding: EdgeInsets.all(32.0),
-        child: Center(
-          child: Column(
-            children: <Widget>[],
-          ),
-        ),
-      ),
+       backgroundColor: new Color.fromARGB(255, 242, 242, 245),
+      body: CustomScrollView(
+        slivers: <Widget>[
+          SliverAppBar(
+            expandedHeight: Constant.appBarHeight,
+            
+          )
+        ],
+      )
     );
   }
 }
