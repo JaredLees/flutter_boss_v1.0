@@ -12,7 +12,8 @@
 
 ![第二步](https://github.com/TopGuo/flutter_boss_v1.0/blob/master/bossapp/doc/shothot/2.gif?raw=true)
 
-> 详情
+> `详情============`
+
 ![第三部](https://github.com/TopGuo/flutter_boss_v1.0/blob/master/bossapp/doc/shothot/3.gif?raw=true)
 
 ![第四部](https://github.com/TopGuo/flutter_boss_v1.0/blob/master/bossapp/doc/shothot/4.gif?raw=true)
