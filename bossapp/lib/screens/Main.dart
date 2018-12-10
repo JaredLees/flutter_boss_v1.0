@@ -3,7 +3,7 @@ import '../Compoments/IconTab.dart';
 import '../Config/Constant.dart';
 import '../screens/message/MessageMain.dart';
 import '../screens/job/JobMainScreen.dart';
-
+import '../screens/mine/MineMain.dart';
 ///程序主入口
 class Main extends StatefulWidget {
   @override
@@ -45,10 +45,10 @@ class _MainState extends State<Main> with SingleTickerProviderStateMixin {
         body: TabBarView(
           children: <Widget>[
             //JobMainScreen(),
-            new JobMainScreen(),
+            JobMainScreen(),
             new Text('CompanyTab--公司'),
             MessageMain(),
-            new Text('MineTab--我的')
+            MineMain()
           ],
           controller: _controller,
         ),
