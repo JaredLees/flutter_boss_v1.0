@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import '../Compoments/IconTab.dart';
 import '../Config/Constant.dart';
-
-import '../screens/Job/JobMainScreen.dart';
+import '../screens/message/MessageMain.dart';
+import '../screens/job/JobMainScreen.dart';
 
 ///程序主入口
 class Main extends StatefulWidget {
@@ -47,7 +47,7 @@ class _MainState extends State<Main> with SingleTickerProviderStateMixin {
             //JobMainScreen(),
             new JobMainScreen(),
             new Text('CompanyTab--公司'),
-            new Text('MessageTab--消息'),
+            MessageMain(),
             new Text('MineTab--我的')
           ],
           controller: _controller,
@@ -61,8 +61,8 @@ class _MainState extends State<Main> with SingleTickerProviderStateMixin {
             tabs: <IconTab>[
               IconTab(
                 icon: _currentIndex == Constant.INDEX_JOB
-                    ? "assets/images/ic_main_tab_company_pre.png"
-                    : "assets/images/ic_main_tab_company_nor.png",
+                    ? "assets/images/ic_main_tab_find_pre.png"
+                    : "assets/images/ic_main_tab_find_nor.png",
                 text: "职位",
                 color: _currentIndex == Constant.INDEX_JOB
                     ? Constant.kPrimaryColor
@@ -72,8 +72,8 @@ class _MainState extends State<Main> with SingleTickerProviderStateMixin {
               ),
               IconTab(
                 icon: _currentIndex == Constant.INDEX_COMPANY
-                    ? "assets/images/ic_main_tab_contacts_pre.png"
-                    : "assets/images/ic_main_tab_contacts_nor.png",
+                    ? "assets/images/ic_main_tab_company_pre.png"
+                    : "assets/images/ic_main_tab_company_nor.png",
                 text: "公司",
                 color: _currentIndex == Constant.INDEX_COMPANY
                     ? Constant.kPrimaryColor
@@ -83,8 +83,8 @@ class _MainState extends State<Main> with SingleTickerProviderStateMixin {
               ),
               IconTab(
                 icon: _currentIndex == Constant.INDEX_MESSAGE
-                    ? "assets/images/ic_main_tab_find_pre.png"
-                    : "assets/images/ic_main_tab_find_nor.png",
+                    ? "assets/images/ic_main_tab_contacts_pre.png"
+                    : "assets/images/ic_main_tab_contacts_nor.png",
                 text: "消息",
                 color: _currentIndex == Constant.INDEX_MESSAGE
                     ? Constant.kPrimaryColor

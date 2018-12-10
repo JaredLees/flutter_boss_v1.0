@@ -18,9 +18,16 @@ class MessageModel {
   final String msg;
 
   static List<MessageModel> fromJson(String json) {
-    return jsonDecode(json)['list']
-        .map((obj) => MessageModel.fromMap(obj))
-        .toList();
+    List<MessageModel> listModel = new List<MessageModel>();
+    List list = jsonDecode(json)['list'];
+    list.forEach((v) {
+      var model = fromMap(v);
+      listModel.add(model);
+    });
+    return listModel;
+    // return jsonDecode(json)['list']
+    //     .map((obj) => MessageModel.fromMap(obj))
+    //     .toList();
   }
 
   static MessageModel fromMap(Map map) {
