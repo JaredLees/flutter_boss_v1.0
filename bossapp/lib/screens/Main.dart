@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import '../Compoments/IconTab.dart';
 import '../Config/Constant.dart';
 
+import '../screens/Job/JobMainScreen.dart';
+
 ///程序主入口
 class Main extends StatefulWidget {
   @override
@@ -42,7 +44,8 @@ class _MainState extends State<Main> with SingleTickerProviderStateMixin {
     return Scaffold(
         body: TabBarView(
           children: <Widget>[
-            new Text('JobsTab--职位'),
+            //JobMainScreen(),
+            new JobMainScreen(),
             new Text('CompanyTab--公司'),
             new Text('MessageTab--消息'),
             new Text('MineTab--我的')
