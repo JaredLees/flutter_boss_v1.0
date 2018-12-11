@@ -1,46 +1,3 @@
-## flutter_boss_v1.0 重构
-
-##说明
-> 该项目是本人基于网上大佬9个月前公布的仿boss直聘app进行的v1.0版本的重构
-
-`而不是简单的copy，旧项目中有部分bug，本人已经修复，另外对目录结果进行从新调整，欢迎star`
-
-> 项目会持续跟新，欢迎关注
-
-## 效果预览图
-![第一步](https://github.com/TopGuo/flutter_boss_v1.0/blob/master/bossapp/doc/shothot/1.gif?raw=true)
-
-![第二步](https://github.com/TopGuo/flutter_boss_v1.0/blob/master/bossapp/doc/shothot/2.gif?raw=true)
-
-> `详情============`
-
-![第三部](https://github.com/TopGuo/flutter_boss_v1.0/blob/master/bossapp/doc/shothot/3.gif?raw=true)
-
-![第四部](https://github.com/TopGuo/flutter_boss_v1.0/blob/master/bossapp/doc/shothot/4.gif?raw=true)
-
-![](https://github.com/TopGuo/flutter_boss_v1.0/blob/master/bossapp/doc/shothot/5.gif?raw=true)
-
-![](https://github.com/TopGuo/flutter_boss_v1.0/blob/master/bossapp/doc/shothot/6.gif?raw=true)
-
-
-## 说明
-1. 该项目有许多地方没有完善
- - 启动页白屏
- - 分页指示器dot问题
- - ...
- - 本项目是在9月前flutter_boss 这个项目的基础上用1.0重构
- - 喜欢的朋友star
- - 感兴趣的朋友欢迎PR
-
-2. 本项目短时间内不再更新
-3. 该项目说明blog地址是：[blog_adress](http://www.cnblogs.com/gdsblog)
-
-4. time:2018-12-10 
-
-
-# 写一个win上 flutter 打包apk的教程
-
-
 ## 这篇文档介绍一下flutter打包发布正式版apk
 
 > 整体来看，和命令行打包rn的方法相差不大
@@ -158,3 +115,11 @@ Proguard是一个Java字节码混淆压缩工具，它可以移除掉React Nativ
 def enableProguardInReleaseBuilds = true
 
 个人建议：若是你的项目因为添加此属性无法运行，则删除此配置。因为，这个真的会导致各种奇怪的问题
+
+
+
+
+
+
+
+
