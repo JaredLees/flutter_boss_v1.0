@@ -8,6 +8,7 @@
 > 项目会持续跟新，欢迎关注
 
 ## 效果预览图
+
 ![第一步](https://github.com/TopGuo/flutter_boss_v1.0/blob/master/bossapp/doc/shothot/1.gif?raw=true)
 
 ![第二步](https://github.com/TopGuo/flutter_boss_v1.0/blob/master/bossapp/doc/shothot/2.gif?raw=true)
@@ -62,6 +63,9 @@ keytool -genkey -v -keystore my-release-key.keystore -alias my-key-alias -keyalg
 keytool -genkey -v -keystore my-release-key.jks -keyalg RSA -keysize 2048 -validity 10000 -alias key
 
 ```
+
+![1](https://github.com/TopGuo/flutter_boss_v1.0/blob/master/bossapp/doc/publicshothot/2.png?raw=true)
+
 `对比上面两条命令key一个生成keystore，一个是生成jks，而生成keystore的已经过期，我们选用第二条`
 
 `JKS 密钥库使用专用格式。建议使用 "keytool -importkeystore -srckeystore boss-release-key.jks -destkeystore boss-release-key.jks -deststoretype pkcs12" 迁移到行业标准格式 PKCS12`
@@ -78,6 +82,8 @@ keytool -genkey -v -keystore my-release-key.jks -keyalg RSA -keysize 2048 -valid
 
 创建一个名为<app dir>/android/key.properties的文件，其中包含对密钥库的引用：
 
+![2](https://github.com/TopGuo/flutter_boss_v1.0/blob/master/bossapp/doc/publicshothot/3.png?raw=true)
+
 ```
 storePassword=<password from previous step>
 keyPassword=<password from previous step>
@@ -89,13 +95,19 @@ storeFile=<location of the key store file, e.g. /Users/<user name>/key.jks>
 
 在gradle中配置签名,通过编辑<app dir>/android/app/build.gradle文件为您的应用配置签名
 
+![](https://github.com/TopGuo/flutter_boss_v1.0/blob/master/bossapp/doc/publicshothot/6.png?raw=true)
+
 ## 构建一个发布版（release）APK
 
 1. cd <app dir> (<app dir> 为您的工程目录)
 
 2. 运行flutter build apk (flutter build 默认会包含 --release选项)
 
+![](https://github.com/TopGuo/flutter_boss_v1.0/blob/master/bossapp/doc/publicshothot/4.png?raw=true)
+
 3. 打包好的发布APK位于<app dir>/build/app/outputs/apk/app-release.apk
+
+![](https://github.com/TopGuo/flutter_boss_v1.0/blob/master/bossapp/doc/publicshothot/7.png?raw=true)
 
 ## 在设备上安装发行版APK
 
@@ -105,7 +117,7 @@ storeFile=<location of the key store file, e.g. /Users/<user name>/key.jks>
 
 ## 到这里该教程完结 
 
-> blog地址 [](http://www.cnblogs.com/gdsblog)
+blog地址 [blog地址](http://www.cnblogs.com/gdsblog)
 
 ## 打包补充=====
 
