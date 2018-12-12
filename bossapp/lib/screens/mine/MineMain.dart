@@ -1,5 +1,7 @@
 import 'package:bossapp/Compoments/ContactItem.dart';
 import 'package:bossapp/Config/Constant.dart';
+import 'package:bossapp/utils/ImageUitl.dart';
+import 'package:bossapp/utils/NavigatorUtil.dart';
 import 'package:flutter/material.dart';
 
 class MineMain extends StatefulWidget {
@@ -69,7 +71,7 @@ class _MineMainState extends State<MineMain> {
                           child: new ClipOval(
                             child: Image(
                               image: NetworkImage(
-                                  "https://avatars2.githubusercontent.com/u/20411648?s=460&v=4"),
+                                  "https://pic.cnblogs.com/avatar/1106982/20180305090747.png"),
                               width: 80.0,
                             ),
                           ),
@@ -132,9 +134,47 @@ class _MineMainState extends State<MineMain> {
                       ],
                     ),
                   ),
-                )
+                ),
+                InkWell(
+                  onTap: () {
+                    NavigatorUtil.pushWeb(context,
+                        title: "鸟窝Blog-下浮群二维码", url: "http://www.cnblogs.com/gdsblog");
+                  },
+                  child: Center(
+                    child: Text('点击跳转加群',style: TextStyle(color: Colors.green,fontSize: 25),),
+                  ),
+                ),
+                Center(
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(6.0),
+                    child: Image(
+                      image: AssetImage(
+                          ImageUitl.getImgPath("qqQun", format: 'jpg')),
+                      width: 300.0,
+                    ),
+                  ),
+                ),
+                InkWell(
+                  onTap: () {
+                    NavigatorUtil.pushWeb(context,
+                        title: "鸟窝Blog-下浮群二维码", url: "http://www.cnblogs.com/gdsblog");
+                  },
+                  child: Center(
+                    child: Text('点击跳转加群',style: TextStyle(color: Colors.green,fontSize: 25),),
+                  ),
+                ),
+                Center(
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(6.0),
+                    child: Image(
+                      image: AssetImage(
+                          ImageUitl.getImgPath("qqQun", format: 'jpg')),
+                      width: 300.0,
+                    ),
+                  ),
+                ),
               ]),
-            ),
+            )
           ],
         ));
   }

@@ -43,8 +43,9 @@ class CompanyListItem extends StatelessWidget {
                       bottom: 5.0,
                     ),
                     child: Text(
+                      //这里容易超索引
                       companyModel.location.substring(
-                          0, companyModel.location.length > 6 ? 6 : 1),
+                          0, companyModel.location.length > 6 ? 6 : 3),
                       style: TextStyle(fontSize: 13.0, color: Colors.grey),
                       overflow: TextOverflow.ellipsis,
                       textAlign: TextAlign.center,
@@ -53,19 +54,33 @@ class CompanyListItem extends StatelessWidget {
                   Padding(
                     padding: EdgeInsets.only(
                       top: 5.0,
-                      left: 0.0,
-                      right: 5.0,
+                      left: 5.0,
+                      right: 10.0,
                       bottom: 5.0,
                     ),
-                    child: Text(
-                      companyModel.type +
-                          " | " +
-                          companyModel.size +
-                          " | " +
-                          companyModel.employee,
-                      style: TextStyle(fontSize: 13.0, color: Colors.grey),
-                      overflow: TextOverflow.ellipsis,
-                      textAlign: TextAlign.center,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Text(
+                          "|"+companyModel.type,
+                          style: TextStyle(fontSize: 13.0, color: Colors.grey),
+                          overflow: TextOverflow.ellipsis,
+                          textAlign: TextAlign.center,
+                        ),
+                        Text(
+                          "|" + companyModel.size,
+                          style: TextStyle(fontSize: 13.0, color: Colors.grey),
+                          overflow: TextOverflow.ellipsis,
+                          textAlign: TextAlign.center,
+                        ),
+                        Text(
+                          "|" + companyModel.employee,
+                          style: TextStyle(fontSize: 13.0, color: Colors.grey),
+                          overflow: TextOverflow.ellipsis,
+                          textAlign: TextAlign.center,
+                        )
+                      ],
                     ),
                   ),
                 ],
