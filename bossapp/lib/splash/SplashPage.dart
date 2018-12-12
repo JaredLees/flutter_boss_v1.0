@@ -42,7 +42,7 @@ class _SplashPageState extends State<SplashPage> {
           child: new Column(
             children: <Widget>[
               new Text(
-                "BOSS直聘",
+                "BOSS??",
                 style: new TextStyle(
                     color: Colors.white,
                     fontSize: 50.0,

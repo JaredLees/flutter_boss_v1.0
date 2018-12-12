@@ -58,12 +58,19 @@ class _MineMainState extends State<MineMain> {
                             right: 50.0,
                             top: 10.0,
                           ),
-                          child: CircleAvatar(
-                            backgroundColor: Colors.yellow,
+                          // child: ClipRRect(
+                          //   borderRadius: BorderRadius.circular(6.0),
+                          //   child: Image(
+                          //     image: NetworkImage(
+                          //         "https://avatars2.githubusercontent.com/u/20411648?s=460&v=4"),
+                          //     width: 100.0,
+                          //   ),
+                          // ),
+                          child: new ClipOval(
                             child: Image(
                               image: NetworkImage(
                                   "https://avatars2.githubusercontent.com/u/20411648?s=460&v=4"),
-                              width: 100.0,
+                              width: 80.0,
                             ),
                           ),
                         )
