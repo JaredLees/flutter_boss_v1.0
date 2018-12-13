@@ -47,8 +47,8 @@
 
 ![修复启动白屏问题](https://github.com/TopGuo/flutter_boss_v1.0/blob/master/bossapp/doc/splashhot/1.gif?raw=true)
 
-2. 新增启动广告页，引导页，倒计时功能
-![](https://github.com/TopGuo/flutter_boss_v1.0/blob/master/bossapp/doc/splashhot/2.gif?raw=true)
+
+![新增启动广告页，引导页，倒计时功能](https://github.com/TopGuo/flutter_boss_v1.0/blob/master/bossapp/doc/splashhot/2.gif?raw=true)
 
 >time:2018-12-13
 
