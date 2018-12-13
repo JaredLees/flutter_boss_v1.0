@@ -5,6 +5,8 @@
 .packages
 .pub/
 build/
+
+
 # If you're building an application, you may want to check-in your pubspec.lock
 pubspec.lock
 
@@ -22,4 +24,5 @@ flutter_boss/
 flutter_wanandroid/
 Flutter_Good_Pro_List/
 myapp/
+common_utils/
 

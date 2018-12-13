@@ -36,6 +36,17 @@
 
 4. time:2018-12-10 
 
+## 说明 v1.1
+
+1. 修复启动白屏问题
+2. 新增启动广告页，引导页，倒计时功能
+
+`这两个gif启动较慢，我正在调试测试，耐心看完`
+
+![修复启动白屏问题](https://github.com/TopGuo/flutter_boss_v1.0/blob/master/bossapp/doc/splashhot/1.gif?raw=true)
+
+2. 新增启动广告页，引导页，倒计时功能
+![](https://github.com/TopGuo/flutter_boss_v1.0/blob/master/bossapp/doc/splashhot/2.gif?raw=true)
 
 # bossapp
 
