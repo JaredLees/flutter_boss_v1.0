@@ -23,6 +23,8 @@ dependencies:
   flustars: ^0.1.4
   common_utils: ^1.0.9
   url_launcher: ^4.0.2
+  fluttertoast: ^2.1.4
+  pulltorefresh_flutter: ^0.1.9
   cached_network_image: ^0.6.0-alpha.2
   # flutter_webview_plugin: 0.3.0+2
   flutter_webview_plugin:
@@ -74,6 +76,9 @@ flutter:
     - assets/images/splash_2.png
     - assets/images/splash_3.png
     - assets/images/qqQun.jpg
+    - assets/images/icon_arrow.png
+    - assets/images/refresh.png
+    - assets/images/icon_cry.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.io/assets-and-images/#resolution-aware.

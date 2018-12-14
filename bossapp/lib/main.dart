@@ -1,3 +1,4 @@
+import 'package:bossapp/compoments/pullpush/pull_push_refresh.dart';
 import 'package:bossapp/core/ApplicationBloc.dart';
 import 'package:bossapp/core/BlocProvider.dart';
 import 'package:bossapp/core/MainBloc.dart';
@@ -17,9 +18,11 @@ import './splash/TSplashPage.dart';
 //           primaryColor: new Color.fromARGB(255, 0, 215, 198),
 //           accentColor: Colors.cyan[300],
 //         ),
-//         home: SplashPage());
+//         home: PullAndPushTest());
 //   }
 // }
+
+
 Future<void> main() async {
   return runApp(BlocProvider<ApplicationBloc>(
     bloc: ApplicationBloc(),
