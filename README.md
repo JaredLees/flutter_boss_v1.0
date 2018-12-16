@@ -9,9 +9,11 @@
 
 ## 效果预览图
 
-![第一步](https://github.com/TopGuo/flutter_boss_v1.0/blob/master/bossapp/doc/shothot/1.gif?raw=true)
+![第一步](https://github.com/TopGuo/flutter_boss_v1.0/blob/master/bossapp/doc/newsplashhot/1.gif?raw=true)
 
-![第二步](https://github.com/TopGuo/flutter_boss_v1.0/blob/master/bossapp/doc/shothot/2.gif?raw=true)
+![第二步](https://github.com/TopGuo/flutter_boss_v1.0/blob/master/bossapp/doc/newsplashhot/2.gif?raw=true)
+
+![第二2步](https://github.com/TopGuo/flutter_boss_v1.0/blob/master/bossapp/doc/newsplashhot/3.gif?raw=true)
 
 
 ![第三部](https://github.com/TopGuo/flutter_boss_v1.0/blob/master/bossapp/doc/shothot/3.gif?raw=true)
