@@ -1,8 +1,8 @@
 import 'package:FlutterNews/conection/repository.dart';
 
 enum Flavor {
-  MOCK,
-  PRO
+  MOCK,//mock 数据
+  PRO//真是数据
 }
 
 /// Simple DI

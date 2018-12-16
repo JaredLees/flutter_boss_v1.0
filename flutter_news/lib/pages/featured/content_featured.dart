@@ -7,6 +7,8 @@ import 'package:FlutterNews/widgets/pageTransform/intro_page_item.dart';
 import 'package:FlutterNews/widgets/pageTransform/page_transformer.dart';
 import 'package:flutter/material.dart';
 
+
+//
 class ContentFeaturedPage extends StatefulWidget{
 
   var errorConection = false;
@@ -20,10 +22,14 @@ class ContentFeaturedPage extends StatefulWidget{
 
   final state = new _ContentFeaturedState();
 
+  // @override
+  // State<StatefulWidget> createState() {
+  //   return state;
+  // }
+
   @override
-  State<StatefulWidget> createState() {
-    return state;
-  }
+  State<StatefulWidget> createState()=>_ContentFeaturedState();
+
 
 }
 
@@ -122,9 +128,7 @@ class _ContentFeaturedState extends State<ContentFeaturedPage> with TickerProvid
       initialData: List<Notice>(),
       stream: bloc.noticies,
       builder: (BuildContext context, AsyncSnapshot snapshot){
-
         var _destaque = snapshot.data;
-
         return new PageTransformer(
             pageViewBuilder: (context, visibilityResolver) {
               return new PageView.builder(

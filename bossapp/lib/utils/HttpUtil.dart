@@ -7,9 +7,9 @@ class HttpUtil {
       return new SplashModel(
         title: '广告Title',
         content: '广告页 content',
-        url: 'http://www.cnblogs.com/gdsblog',
+        url: 'https://www.wenjuan.com/s/zamIRb',
         imgUrl:
-            'https://github.com/TopGuo/Flutter_MyApp/blob/master/doc/shothot/2.gif?raw=true',
+            'https://images.cnblogs.com/cnblogs_com/gdsblog/1129111/o_%e5%be%ae%e4%bf%a1%e5%85%ac%e4%bc%97%e5%8f%b71.png',
       );
     });
   }

@@ -27,7 +27,7 @@ class DetailPage extends StatelessWidget{
           IconButton(
             icon: Icon(Icons.share),
             onPressed: () {
-              shareNotice();
+              //shareNotice();
             },
             color: Colors.white,
           )
@@ -172,7 +172,7 @@ class DetailPage extends StatelessWidget{
   }
 
   Future shareNotice() async {
-    await Share.share("$_title:\n$_link");
+    await Share.share("123");//$_title:\n$_link
   }
 
 }

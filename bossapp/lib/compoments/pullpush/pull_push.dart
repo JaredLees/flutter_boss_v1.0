@@ -66,7 +66,7 @@ class PullAndPush extends StatefulWidget {
       @required this.scrollPhysicsChanged,
       this.defaultRefreshBoxBackgroundColor: Colors.grey,
       this.defaultRefreshBoxTipText: "松手即可刷新",
-      this.defaultRefreshBoxRefreshIconPath: "images/refresh.png",
+      this.defaultRefreshBoxRefreshIconPath: "assets/images/refresh.png",
       this.isPullEnable: true,
       this.isPushEnable: true,
       this.isShowLeadingGlow: false,

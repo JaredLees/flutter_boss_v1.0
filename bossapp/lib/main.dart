@@ -1,8 +1,9 @@
-import 'package:bossapp/compoments/pullpush/pull_push_refresh.dart';
 import 'package:bossapp/core/ApplicationBloc.dart';
 import 'package:bossapp/core/BlocProvider.dart';
 import 'package:bossapp/core/MainBloc.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 //import './splash/SplashPage.dart';
 import './splash/TSplashPage.dart';
 
@@ -22,8 +23,18 @@ import './splash/TSplashPage.dart';
 //   }
 // }
 
-
 Future<void> main() async {
+  TargetPlatform platform = defaultTargetPlatform;
+  if (platform != TargetPlatform.iOS) {
+    SystemUiOverlayStyle systemUiOverlayStyle = SystemUiOverlayStyle(
+      statusBarColor: Colors.transparent,
+      statusBarIconBrightness: Brightness.dark
+    );
+    SystemChrome.setSystemUIOverlayStyle(systemUiOverlayStyle);
+  }
+  SystemChrome.setPreferredOrientations(
+      [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
+
   return runApp(BlocProvider<ApplicationBloc>(
     bloc: ApplicationBloc(),
     child: BlocProvider(child: TSplashPage(), bloc: MainBloc()),
