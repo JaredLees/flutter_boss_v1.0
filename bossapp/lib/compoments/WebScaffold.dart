@@ -14,9 +14,7 @@ class WebScaffold extends StatefulWidget {
   final String url;
 
   @override
-  State<StatefulWidget> createState() {
-    return new WebScaffoldState();
-  }
+  State<StatefulWidget> createState()=>WebScaffoldState();
 }
 
 class WebScaffoldState extends State<WebScaffold> {
@@ -33,7 +31,7 @@ class WebScaffoldState extends State<WebScaffold> {
               _webScaffoldKey.currentState.scrollToTop();
             },
             child: new Text(
-              widget.title ?? "TODO",//TODO://IntlUtil.getString(context, widget.titleId),
+              widget.title ?? "TODO",//IntlUtil.getString(context, widget.titleId),
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
             )),
